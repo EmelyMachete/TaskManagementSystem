@@ -4,29 +4,37 @@
 
 <form asp-action="Create" method="post">
     <div>
-        <label>Title</label><br />
+        <label asp-for="Title"></label><br />
         <input asp-for="Title" />
+        <span asp-validation-for="Title" style="color:red"></span>
     </div>
 
     <div>
-        <label>Description</label><br />
-        <input asp-for="Description" />
+        <label asp-for="Description"></label><br />
+        <textarea asp-for="Description"></textarea>
+        <span asp-validation-for="Description" style="color:red"></span>
     </div>
 
     <div>
-        <label>Status</label><br />
+        <label asp-for="Status"></label><br />
         <select asp-for="Status">
+            <option value="">-- Select Status --</option>
             <option>To Do</option>
             <option>In Progress</option>
             <option>Completed</option>
         </select>
+        <span asp-validation-for="Status" style="color:red"></span>
     </div>
 
     <div>
-        <label>Due Date</label><br />
+        <label asp-for="DueDate"></label><br />
         <input asp-for="DueDate" type="date" />
     </div>
 
     <br />
-    <button type="submit">Create Task</button>
+    <button type="submit">Save Task</button>
 </form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
