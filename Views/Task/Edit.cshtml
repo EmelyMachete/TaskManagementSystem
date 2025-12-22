@@ -1,0 +1,34 @@
+﻿@model TaskManagementSystem.Models.TaskItem
+
+<h2>Edit Task</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div>
+        <label>Title</label><br />
+        <input asp-for="Title" />
+    </div>
+
+    <div>
+        <label>Description</label><br />
+        <input asp-for="Description" />
+    </div>
+
+    <div>
+        <label>Status</label><br />
+        <select asp-for="Status">
+            <option>To Do</option>
+            <option>In Progress</option>
+            <option>Completed</option>
+        </select>
+    </div>
+
+    <div>
+        <label>Due Date</label><br />
+        <input asp-for="DueDate" type="date" />
+    </div>
+
+    <br />
+    <button type="submit">Save Changes</button>
+</form>

@@ -1,0 +1,32 @@
+﻿@model TaskManagementSystem.Models.TaskItem
+
+<h2>Create Task</h2>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label>Title</label><br />
+        <input asp-for="Title" />
+    </div>
+
+    <div>
+        <label>Description</label><br />
+        <input asp-for="Description" />
+    </div>
+
+    <div>
+        <label>Status</label><br />
+        <select asp-for="Status">
+            <option>To Do</option>
+            <option>In Progress</option>
+            <option>Completed</option>
+        </select>
+    </div>
+
+    <div>
+        <label>Due Date</label><br />
+        <input asp-for="DueDate" type="date" />
+    </div>
+
+    <br />
+    <button type="submit">Create Task</button>
+</form>
