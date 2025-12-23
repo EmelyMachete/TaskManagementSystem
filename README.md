@@ -25,6 +25,15 @@ This project was built to strengthen understanding of ASP.NET Core MVC fundament
 - User authentication and authorization
 - Improved UI styling with Bootstrap
 
+
+## 📸 Screenshots
+
+### Tasks List
+![Tasks List](screenshots/tasks-list.png)
+
+### Create Task
+![Create Task](screenshots/create-task.png)
+
 ## Author
 Emely Mokgadi Machete  
 Juniour Software Developer
