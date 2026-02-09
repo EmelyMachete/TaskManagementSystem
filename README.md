@@ -22,13 +22,13 @@ This application addresses that problem by enforcing structured task workflows a
 - Framework: ASP.NET Core MVC
 - ORM: Entity Framework Core
 - Database: SQL Server
-- Architecture: Model–View–Controller (MVC)
+- Architecture: Model-View-Controller (MVC)
 
 ## System Design and Engineering Decisions
-- Responsibilities are clearly separated across application layers to reduce coupling
-- Validation is enforced server-side to ensure consistent application state
-- Controller logic is written explicitly to improve readability and maintainability
-- Database access is managed through Entity Framework Core to reduce manual SQL errors
+- Application responsibilities are clearly separated across models, controllers, and views to reduce coupling
+- Validation is enforced server-side to ensure consistent and predictable application state
+- Controller logic is written explicitly for readability and ease of maintenance
+- Database access is handled through Entity Framework Core to reduce manual SQL errors and improve data integrity
 
 ## Assumptions and Limitations
 - Single-user context with no authentication or authorization
@@ -45,8 +45,6 @@ This application addresses that problem by enforcing structured task workflows a
 ## Outcome
 This project demonstrates disciplined implementation of CRUD workflows, validation, and application state management in an ASP.NET Core MVC environment.
 
-
-
 ## 📸 Screenshots
 
 ### Tasks List
@@ -57,4 +55,4 @@ This project demonstrates disciplined implementation of CRUD workflows, validati
 
 ## Author
 Emely Mokgadi Machete  
-Juniour Software Developer
+Junior Software Engineer (ASP.NET / C#)
